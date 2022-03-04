@@ -1,0 +1,154 @@
+/* /////////////////////////////////////SETUP///////////////////////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ///////////////////////////////////////GRID//////////////////////////////////////// */
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "C Devide Multyply Subtract"
+      "btn-7 btn-8 btn-9 add"
+      "btn-4 btn-5 btn-6 add"
+      "btn-1 btn-2 btn-3 enter"
+      "zero zero decimal enter"
+      "Input Input Input Input"
+      "Output Output Output Output";
+      justify-items: stretch;
+      align-content: center;
+      justify-content: center;
+
+      padding: 20px;
+      border: 2px solid saddlebrown;
+      background-color: #EEEDDE;
+  }
+  
+  .C { grid-area: C; }
+  
+  .Devide { grid-area: Devide; }
+  
+  .Multyply { grid-area: Multyply; }
+  
+  .Subtract { grid-area: Subtract; }
+  
+  .btn-7 { grid-area: btn-7; }
+  
+  .btn-8 { grid-area: btn-8; }
+  
+  .btn-9 { grid-area: btn-9; }
+  
+  .btn-4 { grid-area: btn-4; }
+  
+  .btn-5 { grid-area: btn-5; }
+  
+  .btn-6 { grid-area: btn-6; }
+  
+  .btn-1 { grid-area: btn-1; }
+  
+  .btn-2 { grid-area: btn-2; }
+  
+  .btn-3 { grid-area: btn-3; }
+  
+  .add { grid-area: add; }
+  
+  .enter { grid-area: enter; }
+  
+  .zero { grid-area: zero; }
+  
+  .decimal { grid-area: decimal; }
+  
+  .Input { 
+    grid-area: Input;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #203239 solid 2px;
+    border-radius: 5px;
+    background-color: #E0DDAA;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+  
+  .Output { 
+      grid-area: Output;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: #203239 solid 2px;
+      border-radius: 5px;
+      background-color: #E0DDAA;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1.2rem;
+    }
+  
+  /* ///////////////////////////////////////BUTTONS///////////////////////////////////// */
+
+  .btn-small {
+    height: 50px;
+    width: 60px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #E0DDAA;
+    color: #141E27;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: #203239 solid 2px;
+    border-radius: 5px;
+  }
+
+  .btn-height {
+    height: 110px;
+    width: 60px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #E0DDAA;
+    color: #141E27;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: #203239 solid 2px;
+    border-radius: 5px;
+  }
+
+  .btn-wide {
+    height: 50px;
+    width: 130px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #E0DDAA;
+    color: #141E27;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: #203239 solid 2px;
+    border-radius: 5px;
+  }
+
+  #input-number {
+    height: 100%;
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    background-color: #E0DDAA;
+    color: #141E27;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
